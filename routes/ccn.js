@@ -4,11 +4,6 @@ const router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
-//TWS: Why have these declared up here when you do it again below in the POST route?
-// const accountSid = process.env.TWILIO_ACCOUNT_SID;
-// const authToken = process.env.TWILIO_AUTH_TOKEN;
-// const serviceSid = process.env.TWILIO_MESSAGING_SERVICE_SID;
-
 //TWS: Pulls in schema for contact model which already handles Mongo connection.
 var Contact = require('../models/contact');
 
