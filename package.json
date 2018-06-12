@@ -1,0 +1,42 @@
+{
+  "name": "ccn",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "bootbox": "^4.4.0",
+    "bootstrap": "^4.1.0",
+    "connect-flash": "*",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "fastselect": "^0.7.3",
+    "font-awesome": "^4.7.0",
+    "glyphicons": "^0.2.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jquery": "^3.3.1",
+    "mdbootstrap": "^4.5.1",
+    "mocha": "^5.1.1",
+    "mongodb": "^3.0.6",
+    "mongoose": "*",
+    "morgan": "~1.9.0",
+    "node-env-run": "^3.0.2",
+    "nodemon": "^1.17.4",
+    "npm": "^5.10.0",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "popper.js": "^1.14.3",
+    "twilio": "^3.14.0"
+  }
+}

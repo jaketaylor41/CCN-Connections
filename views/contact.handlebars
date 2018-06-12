@@ -1,0 +1,43 @@
+<h2 class="page-header">Contacts</h2>
+
+
+<div class="view view-cascade gradient-card-header blue-gradient" style="height: 100px;
+    background-image: linear-gradient(120deg, #87ceeb 0%, #005695 100%);
+    border-radius: 10px;"><h6>#</h6><h6>Phone Number</h6><h6>Group</h6></div>
+<div class="contactTableDiv">
+    <!--Table-->
+    <table id="contactTable" class="table table-bordered table-hover" style="background-color: rgba(255, 255, 255, 0.8);">
+        <!--Table head-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th>#</th>-->
+            <!--<th>Phone Number</th>-->
+            <!--<th>Group</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--&lt;!&ndash;Table head&ndash;&gt;-->
+
+        <!--Table body-->
+{{#contacts}}
+        <tbody>
+        <tr>
+            <td></td>
+            <td>{{number}}</td>
+            <td>{{group}}</td>
+        </tr>
+{{/contacts}}
+        </tbody>
+        <!--Table body-->
+    </table>
+    <!--Table-->
+
+    <script>
+        var table = document.getElementsByTagName('table')[0],
+                rows = table.getElementsByTagName('tr'),
+                text = 'textContent' in document ? 'textContent' : 'innerText';
+
+        for (var i = 0, len = rows.length; i < len; i++){
+            rows[i].children[0][text] = i + '.' + rows[i].children[0][text];
+        }
+    </script>
+</div>

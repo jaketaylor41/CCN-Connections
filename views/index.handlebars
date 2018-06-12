@@ -1,0 +1,130 @@
+<button type="button" id="addContactBtn" class="btn btn-blue waves-effect waves-light" data-toggle="modal" data-target="#myModal">Add Contact</button>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="modalTitle" class="modal-title">Add Contact</h4>
+            </div>
+            <div class="modal-body">
+                <p>Enter Number:</p>
+                <input id="txtClient1" type="text" class="form-control" name="contact" placeholder="ex: 1234567891">
+                <p style="padding-top: 20px">Select Group:</p>
+                <!--<select id="inputState" class="form-control">-->
+                    <!--<option selected>Choose...</option>-->
+                    <div class="groupBtns" data-toggle="button">
+                        <button class="btn btn-blue" id="family">Families</button>
+                        <button class="btn btn-blue" id="donors">Donors</button>
+                        <button class="btn btn-blue" id="volunteer">Volunteers</button>
+                    </div>
+                <!--</select>-->
+            </div>
+            <div class="modal-footer">
+                <button id="btnAdd" type="button" class="btn btn-success">Add</button>
+                <div class="alert alert-success fade">
+                    <strong><span class="glyphicon glyphicon-ok"></span></strong> Contact Added
+                </div>
+                <button id="btnCancel" type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $("#btnAdd").on("click", function() {
+        $(".alert").removeClass("in").show();
+        $(".alert").delay(200).addClass("in").fadeOut(2000);
+    });
+
+</script>
+
+<label id="buttonGroup" style="margin-left: 270px" for="btn-group">Select Group:</label>
+<div class="btnGroup" style="text-align: center">
+<div class="btn-group btn-group-toggle" data-toggle="button" role="group" aria-label="Basic example">
+    <button class="btn btn-blue" id="familyGroup" style="width: auto;">Families</button>
+    <button class="btn btn-blue" id="donorGroup" style="width: auto;">Donors</button>
+    <button class="btn btn-blue" id="volunteerGroup" style="width: auto;">Volunteers</button>
+</div>
+</div>
+
+<script>
+    $('#familyGroup').click(function (e) {
+        $('#donorGroup').removeClass('active')
+    });
+
+    $('#familyGroup').click(function (e) {
+        $('#volunteerGroup').removeClass('active')
+    });
+
+    $('#volunteerGroup').click(function (e) {
+        $('#familyGroup').removeClass('active')
+    });
+
+    $('#volunteerGroup').click(function (e) {
+        $('#donorGroup').removeClass('active')
+    });
+
+    $('#donorGroup').click(function (e) {
+        $('#familyGroup').removeClass('active')
+    });
+
+    $('#donorGroup').click(function (e) {
+        $('#volunteerGroup').removeClass('active')
+    });
+
+    //
+    $('#familyGroup').click(function (e) {
+        $('#donorGroup').removeClass('active')
+    });
+
+    $('#family').click(function (e) {
+        $('#volunteer').removeClass('active')
+    });
+
+    $('#family').click(function (e) {
+        $('#donors').removeClass('active')
+    });
+
+    $('#volunteer').click(function (e) {
+        $('#family').removeClass('active')
+    });
+
+    $('#volunteer').click(function (e) {
+        $('#donors').removeClass('active')
+    });
+
+    $('#donors').click(function (e) {
+        $('#family').removeClass('active')
+    });
+
+    $('#donors').click(function (e) {
+        $('#volunteer').removeClass('active')
+    });
+
+</script>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="messageBox" class="form-group">
+            <label id="message" for="form_message">Enter Message:</label>
+            <textarea id="form_message" name="message" class="form-control" placeholder="Enter Message.." rows="4"></textarea>
+        </div>
+    </div>
+</div>
+
+<div id="sendBtn">
+    <button id="messageSend" class="btn btn-success"><i class="glyphicon glyphicon-send" style="padding-right: 5px;"></i>Send</button>
+</div>
+
+<script>
+    $(function() {
+        $("#messageSend").click( function()
+                {
+                    $(this).toggleClass('clicked');
+                }
+        );
+    });
+</script>

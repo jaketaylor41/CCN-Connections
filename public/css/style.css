@@ -1,0 +1,481 @@
+/* Space out content a bit */
+body {
+    padding-bottom: 20px;
+}
+.backgroundImage{
+    padding-bottom: 25px;
+}
+p {
+    text-align: center;
+    font-family: SansSerif;
+    color: rgb(0, 86, 149);
+}
+a{
+    font-family: SansSerif;
+}
+.h4{
+    font-family: SansSerif;
+    font-size: 20px;
+}
+.h2{
+    font-family: SansSerif;
+    font-size: 20px;
+}
+option{
+    font-family: SansSerif;
+}
+.background {
+    background-repeat: no-repeat;
+    z-index: -1000;
+    position: fixed;
+    width: 100%;
+}
+.logo {
+    width: 25%;
+    height: 25%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+div.loginscreen{
+    display: table-cell;
+    vertical-align: text-top;
+    margin: 0 auto;
+    width: 50%;
+}
+div.registerpage{
+    display: table-cell;
+    vertical-align: text-top;
+    margin: 0 auto;
+    width: 50%;
+}
+div.contactspage{
+    display: table-cell;
+    vertical-align: text-top;
+    margin: 0 auto;
+    width: 50%;
+}
+div.messagecenter{
+    display: table-cell;
+    vertical-align: text-top;
+    margin: 0 auto;
+    width: 50%;
+}
+div#groupSelect.form-group.col-md-4{
+    display: table-cell;
+    vertical-align: text-top;
+    width: 50%;
+}
+label{
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 0 200px 5px;
+    color: rgb(0, 86, 149);
+    font-family: SansSerif;
+}
+label#group{
+    margin: inherit;
+    display: table-cell;
+    padding-left: 60px;
+    font-family: SansSerif;
+}
+label#message{
+    display: table-cell;
+    margin: inherit;
+    padding-left: 110px;
+    font-family: SansSerif;
+}
+input{
+    border: 3px solid black;
+}
+#username {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin-left: 200px;
+}
+#password {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin-left: 200px;
+}
+#fname {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#usrname {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#email {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#pw {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#cpw{
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#groupname{
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#phonenumber{
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#group{
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#message{
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+li a:hover {
+    color: #87ceeb
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* Custom page header */
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+/* Customize container */
+@media (min-width: 320px) {
+    .container{
+        max-width: 800px;
+        background: rgba(255, 255, 255, .5);
+        position: relative;
+        margin: 0 auto;
+    }
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 320px) {
+    /* Remove the padding we set earlier */
+    #username,
+    #inputState,
+    #password,
+    .form-group,
+    label.active,
+    #form_message,
+    #groupSelect,
+    .loginscreen,
+    .registerpage,
+    .contactspage,
+    .messagecenter,
+    .row,
+    .col-md-12,
+    .col-md-4,
+    .submitButton,
+    .sendBtn,
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+.page-header{
+    margin-top:0;
+    text-align: center;
+    font-family: SansSerif;
+    color: rgb(0, 86, 149);
+}
+.dashboardHead {
+    margin-bottom:0;
+    text-align: center;
+    font-family: SansSerif;
+    color: rgb(0, 86, 149);
+}
+footer{
+    margin-top:40px;
+}
+.submitButton {
+    margin: 0 auto;
+    width: 50%;
+}
+#grpSel {
+    float: right;
+}
+#form_message {
+    width: 75%;
+    height: 250px;
+    position: relative;
+    resize: none;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: SansSerif;
+}
+#inputState {
+    width: 75%;
+    position: relative;
+    resize: none;
+    margin: 0 auto;
+    font-family: SansSerif;
+    font-size: 14px;
+}
+#groupSelect {
+    font-family: SansSerif;
+    font-size: 15px;
+    color: rgb(0, 86, 149);
+    margin: 0 180px 5px;
+}
+#messageBox span {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+#submitBtn {
+    width: 100%;
+    font-family: SansSerif;
+    border: none;
+    padding: 10px;
+}
+#loginBtn{
+    width: 50%;
+    font-family: SansSerif;
+    border: none;
+    padding: 10px;
+}
+#addContactBtn{
+    border: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: 12px;
+    width: auto;
+    margin-bottom: 20px;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#modalTitle {
+    font-family: SansSerif;
+    color: rgb(0, 86, 149);
+    font-weight: bold;
+    font-size: 30px;
+}
+#registerTitle {
+    font-family: SansSerif;
+    color: rgb(0, 86, 149);
+    font-weight: bold;
+    font-size: 30px;
+}
+#usernameInput{
+    background-color: white;
+    /*border: none;*/
+    border-radius: 5px;
+    width: 50%;
+    font-size: 12px;
+}
+#usernameInput:focus{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+#passwordInput{
+    background-color: white;
+    /*border: none;*/
+    border-radius: 5px;
+    width: 50%;
+    font-size: 12px;
+}
+#passwordInput:focus{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.deep-blue-gradient {
+    background-image: linear-gradient(120deg, #87ceeb 0%, #005695 100%);
+}
+.form-header{
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.rounded{
+    border-radius: .25rem!important;
+}
+.mx-xl-5{
+    margin-left: 3rem!important;
+    margin-right: 3rem!important;
+    padding: 20px;
+}
+.card{
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255,255,255,.5);
+    background-clip: border-box;
+}
+#messageSend{
+    border: none;
+    padding: 12px;
+    font-family: sans-serif;
+    width: auto;
+}
+.form-control:focus{
+    background: #ffffff;
+}
+#txtClient1{
+    background: #ffffff;
+    width: 70%;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    font-size: 14px;
+    font-family: SansSerif;
+}
+#btnAdd{
+    border: none;
+    font-size: 14px;
+    padding: 12px;
+}
+#btnCancel{
+    border: none;
+    font-size: 12px;
+    padding: 12px;
+    float: left;
+}
+.alert{
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 30%;
+    float: right;
+    overflow: hidden;
+    margin: 0;
+}
+.modal-footer{
+    text-align: left;
+}
+strong{
+    font-weight: bold;
+    padding: 10px;
+}
+#registerInput{
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: SansSerif;
+}
+#registerInput:focus{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+#family{
+    border: none;
+    margin: 0 auto;
+    padding: 10px;
+    width: 20%;
+}
+
+#volunteer{
+    border: none;
+    margin-top: 20px;
+    width: 20%;
+    padding: 10px;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#donors{
+    width: 20%;
+}
+
+.groupBtns{
+    display: flex;
+}
+
+.btn-blue:not([disabled]):not(.disabled).active, .btn-blue:not([disabled]):not(.disabled):active, .show>.btn-blue.dropdown-toggle{
+    background-color: #144977 !important;
+}
+
+table th{
+    font-size: 15px;
+}
+
+table td {
+    font-size: 12px;
+}
+
+.contactTableDiv{
+    display: block;
+    max-height: 400px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
