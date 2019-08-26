@@ -12,8 +12,20 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var bootbox = require('bootbox');
 
-mongoose.connect('mongodb://localhost/loginapp');
+
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://dbUser:5rC8VG3xs1Agc6Kq@cluster0-bb4re.mongodb.net/test?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// })
+
+mongoose.connect('mongodb://localhost/myDataBase');
 var db = mongoose.connection;
+
+
 
 db.once('open', function () {
     console.log('Connected to MongoDB');
